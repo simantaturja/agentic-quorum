@@ -1,0 +1,23 @@
+{
+  "manifest_version": "0.3",
+  "name": "agentic-quorum",
+  "display_name": "Agentic Quorum",
+  "version": "1.0.0",
+  "description": "Live multi-agent debates inside Claude: Advocate vs Skeptic duels or a five-member parliament that argues, allies, and votes.",
+  "author": {
+    "name": "Turja"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "mcp/server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/mcp/server.js"]
+    }
+  },
+  "compatibility": {
+    "runtimes": {
+      "node": ">=20.0.0"
+    }
+  }
+}

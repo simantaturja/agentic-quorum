@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agentic Quorum</title>
+<style>
+/*__CSS__*/
+
+/* Iframe-specific overrides: compact layout inside the chat panel. */
+.wrap { max-width: 100%; padding: 14px 14px 60px; }
+#stickybar { margin: 0 -14px 18px; }
+#status {
+  text-align: center; font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1.2px; margin-top: 6px;
+}
+.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 120px; color: var(--muted); font-size: 13.5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="stickybar">
+    <div id="stickytopic"></div>
+    <div class="stepper" id="stepper"></div>
+    <div id="house"></div>
+    <div id="status">connecting…</div>
+  </div>
+  <main id="arena">
+    <div class="placeholder">Waiting for the debate to start…</div>
+  </main>
+</div>
+<script>
+//__JS__
+</script>
+</body>
+</html>

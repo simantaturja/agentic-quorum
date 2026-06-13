@@ -1,0 +1,24 @@
+{
+  "name": "agentic-quorum",
+  "version": "1.0.0",
+  "description": "Watch Claude agents debate a topic — 1v1 duel or 5-member parliament — and land on an answer",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build:mcp": "node mcp/build.js",
+    "pack:mcp": "npm run build:mcp && npx @anthropic-ai/mcpb pack . agentic-quorum.mcpb"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.1.0",
+    "@modelcontextprotocol/ext-apps": "^1.7.4",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

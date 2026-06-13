@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agentic Quorum</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="title"><span class="a">Advocate</span> <span class="vs">vs</span> <span class="s">Skeptic</span></h1>
+    <p id="subtitle">Two Claude agents debate. A judge lands on an answer.</p>
+  </header>
+
+  <form id="form">
+    <input id="topic" type="text" placeholder="Drop a question or a claim to fight over…" autocomplete="off" />
+    <select id="mode" title="Debate format">
+      <option value="duel">⚔ Duel — 1v1</option>
+      <option value="parliament">🏛 Parliament — 5 minds</option>
+    </select>
+    <select id="rounds" title="Rounds">
+      <option value="1">1 round</option>
+      <option value="2">2 rounds</option>
+      <option value="3">3 rounds</option>
+    </select>
+    <select id="model" title="Model">
+      <option value="sonnet">Sonnet</option>
+      <option value="opus">Opus</option>
+      <option value="haiku">Haiku</option>
+    </select>
+    <button id="go" type="submit">Start debate</button>
+  </form>
+
+  <div class="suggestions" id="suggestions">
+    <button>Should startups default to monoliths over microservices?</button>
+    <button>Is TDD worth it for fast-moving teams?</button>
+    <button>Will AI agents replace most SaaS dashboards?</button>
+  </div>
+
+  <div id="stickybar">
+    <div id="stickytopic"></div>
+    <div class="stepper" id="stepper"></div>
+    <div id="house"></div>
+  </div>
+
+  <main id="arena"></main>
+</div>
+
+<button id="jump">↓ Follow the debate</button>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+mcp/dist/
+*.mcpb
+
+# OS / editor
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*

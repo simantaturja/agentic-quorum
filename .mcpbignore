@@ -1,0 +1,7 @@
+# Not needed inside the desktop extension bundle
+public/
+server.js
+README.md
+mcp/ui/
+mcp/build.js
+*.mcpb
